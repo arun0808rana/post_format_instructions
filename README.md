@@ -14,6 +14,40 @@
 node index.js
 ```
 
+### vs-code alt+{i,j,k,l} for arrow keys binding setup
+
+- Install `xbindkeys` and `xvkbd`.
+
+```bash
+sudo apt install xbindkeys
+sudo apt install xvkbd
+```
+- Generate xbindkeysrc in home
+
+```bash
+xbindkeys --defaults > ~/.xbindkeysrc
+```
+
+- Add the following in the xbindkeysrc file. Its hidden so ls -al in the root dir.
+
+```bash
+"xvkbd -xsendevent -text '\[Left]'"
+m:0x18 + c:44
+alt + j
+
+"xvkbd -xsendevent -text '\[Down]'"
+m:0x18 + c:45
+alt + k
+
+"xvkbd -xsendevent -text '\[Right]'"
+m:0x18 + c:46
+alt + l
+
+"xvkbd -xsendevent -text '\[Up]'"
+m:0x18 + c:31
+alt + i
+```
+
 ### Nodejs
 
 - `sudo apt install curl`
