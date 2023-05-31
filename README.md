@@ -1,10 +1,34 @@
 # Post Format Instructions
 
-### VS Code
+### Nodejs
 
-- `sudo snap install --classic code`
+#### Using Nix
+- `nix-env -iA nixpkgs.nodejs`
+or from official website using curl
+
+- `sudo apt install curl`
+- Go to https://github.com/nodesource/distributions/blob/master/README.md#debinstall
+- choose the lts version
+- verify `node -v`
+- verify `npm -v`
+
+### yarn
+
+`npm install --global yarn`
+
+### VS Codium
+
+#### Using Nix
+- `nix-env -iA nixpkgs.vscodium`
 
 #### extension related
+
+> Export/Import preferences config file.
+
+##### codium 
+- `codium --list-extensions`
+
+##### vscode
 
 - `code --list-extensions` lists currently installed extensions.
 - Put all your generated names in the file `vscode_instructions/vscode_instr.txt`.
@@ -47,14 +71,6 @@ alt + l
 m:0x18 + c:31
 alt + i
 ```
-
-### Nodejs
-
-- `sudo apt install curl`
-- Go to https://github.com/nodesource/distributions/blob/master/README.md#debinstall
-- choose the lts version
-- verify `node -v`
-- verify `npm -v`
 
 
 ### GIT
