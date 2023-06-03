@@ -65,6 +65,11 @@ nix-env -iA nixpkgs.git
 - `sudo apt install git`
 - verfiy `git -v`
 
+### Libre Wolf
+
+```bash
+nix-env -iA nixpkgs.librewolf
+```
 
 ### VS Codium
 
