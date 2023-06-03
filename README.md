@@ -42,6 +42,7 @@ or from official website using curl
 ```bash
 sudo apt install curl
 ```
+
 - Go to https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 - choose the lts version
 - verify `node -v`
@@ -74,7 +75,8 @@ nix-env -iA nixpkgs.git
 #### Using Nix
 
 ```bash
-nix-env -iA nixpkgs.vscodium```
+nix-env -iA nixpkgs.vscodium
+```
 
 
 #### extension related
