@@ -5,6 +5,7 @@
 - search for driver or software
 - open `Additional Drivers`
 - choose the `proprietary and tested` option from driver list
+- RESTART
 
 ### update
 `sudo apt update && sudo apt upgrade`
