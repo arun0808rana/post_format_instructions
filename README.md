@@ -33,8 +33,11 @@ or from official website using curl
 - verify `npm -v`
 
 ### yarn
+- `nix-env -iA nixpkgs.yarn`
 
-`npm install --global yarn`
+or 
+
+- `npm install --global yarn`
 
 ### VS Codium
 
