@@ -1,5 +1,11 @@
 # Post Format Instructions
 
+### Fix nvidia proprietary driver crap (shutdown bug)
+
+- search for driver or software
+- open `Additional Drivers`
+- choose the `proprietary and tested` option from driver list
+
 ### update
 `sudo apt update && sudo apt upgrade`
 
