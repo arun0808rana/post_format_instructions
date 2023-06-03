@@ -13,6 +13,12 @@
 ### curl
 `sudo apt install curl`
 
+### nix
+
+Official website download or script
+
+`sh <(curl -L https://nixos.org/nix/install) --daemon`
+
 ### Nodejs
 
 #### Using Nix
