@@ -8,41 +8,74 @@
 - RESTART
 
 ### update
-`sudo apt update`
+
+```bash
+sudo apt update
+```
 
 ### curl
-`sudo apt install curl`
+
+```bash
+sudo apt install curl
+```
+
 
 ### nix
 
 Official website download or script
 
-`sh <(curl -L https://nixos.org/nix/install) --daemon`
+```bash
+sh <(curl -L https://nixos.org/nix/install) --daemon
+```
+
 
 ### Nodejs
 
 #### Using Nix
-- `nix-env -iA nixpkgs.nodejs`
+
+```bash
+nix-env -iA nixpkgs.nodejs
+```
 
 or from official website using curl
 
-- `sudo apt install curl`
+```bash
+sudo apt install curl
+```
 - Go to https://github.com/nodesource/distributions/blob/master/README.md#debinstall
 - choose the lts version
 - verify `node -v`
 - verify `npm -v`
 
 ### yarn
-- `nix-env -iA nixpkgs.yarn`
+
+```bash
+nix-env -iA nixpkgs.yarn
+```
 
 or 
 
-- `npm install --global yarn`
+```bash
+npm install --global yarn
+```
+
+### GIT
+
+```bash
+nix-env -iA nixpkgs.git
+```
+
+- `sudo apt install git`
+- verfiy `git -v`
+
 
 ### VS Codium
 
 #### Using Nix
-- `nix-env -iA nixpkgs.vscodium`
+
+```bash
+nix-env -iA nixpkgs.vscodium```
+
 
 #### extension related
 
@@ -96,9 +129,6 @@ alt + i
 ```
 
 
-### GIT
 
-- `sudo apt install git`
-- verfiy `git -v`
 
 
