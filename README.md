@@ -8,7 +8,7 @@
 - RESTART
 
 ### update
-`sudo apt update && sudo apt upgrade`
+`sudo apt update`
 
 ### curl
 `sudo apt install curl`
