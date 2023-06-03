@@ -23,6 +23,7 @@ Official website download or script
 
 #### Using Nix
 - `nix-env -iA nixpkgs.nodejs`
+
 or from official website using curl
 
 - `sudo apt install curl`
