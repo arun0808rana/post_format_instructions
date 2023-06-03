@@ -1,4 +1,8 @@
 # Post Format Instructions
+
+### update
+`sudo apt update && sudo apt upgrade`
+
 ### curl
 `sudo apt install curl`
 
