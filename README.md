@@ -1,4 +1,6 @@
 # Post Format Instructions
+### curl
+`sudo apt install curl`
 
 ### Nodejs
 
