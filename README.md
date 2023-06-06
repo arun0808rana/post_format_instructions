@@ -132,6 +132,18 @@ alt + i
 ```
 
 
+### Volumes commands
+
+```bash
+amixer -D pulse sset Master unmute 5%+
+```
+
+```bash
+amixer -D pulse sset Master unmute 5%-
+```
+
+- todo: add hotkeys for the above.
+
 
 
 
