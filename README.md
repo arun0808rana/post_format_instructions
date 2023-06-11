@@ -7,13 +7,13 @@
 - choose the `proprietary and tested` option from driver list
 - RESTART
 
-### update
+### Update
 
 ```bash
 sudo apt update
 ```
 
-### curl
+### Curl
 
 ```bash
 sudo apt install curl
@@ -30,7 +30,7 @@ sudo apt install brave-browser
 ```
 
 
-### nix
+### Nix
 
 Official website download or script
 
@@ -46,7 +46,7 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
 sudo apt-get install -y nodejs
 ```
 
-### yarn
+### Yarn
 
 ```bash
 npm install --global yarn
@@ -85,11 +85,11 @@ nix-env -iA nixpkgs.vscodium
 ```
 
 
-#### extension related
+#### Extension related
 
 > Export/Import preferences config file.
 
-##### codium 
+##### Codium 
 - `codium --list-extensions`
 
 ##### vscode
