@@ -13,6 +13,26 @@
 sudo apt update
 ```
 
+### Themeing
+
+#### Gnome-Tweaks
+
+```bash
+sudo apt install gnome-tweaks
+```
+
+#### Create .themes & .icons dirs for themes & icons
+
+```bash
+mkdir ~/.themes
+mkdir ~/.icons
+```
+- Download the bordered-legacy-buttons variant of the guvbox theme from https://www.gnome-look.org/p/1681313.
+- Extract the zip inside .themes
+- Download zip of this gruvbox-icon repo https://github.com/jkehler/gruvbox-icons.
+- Extract the zip inside .icons
+- use gnome-tweaks > appearance to change icons & themes
+
 ### Curl
 
 ```bash
