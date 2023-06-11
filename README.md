@@ -19,6 +19,16 @@ sudo apt update
 sudo apt install curl
 ```
 
+### Brave Browser
+
+```bash
+sudo apt install curl
+sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/brave-browser-archive-keyring.gpg] https://brave-browser-apt-release.s3.brave.com/ stable main"|sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+sudo apt update
+sudo apt install brave-browser
+```
+
 
 ### nix
 
@@ -31,26 +41,12 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 
 ### Nodejs
 
-#### Using Nix
-
 ```bash
-nix-env -iA nixpkgs.nodejs
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash - &&\
+sudo apt-get install -y nodejs
 ```
-
-or from official website using curl
-
-- Go to https://github.com/nodesource/distributions/blob/master/README.md#debinstall
-- choose the lts version
-- verify `node -v`
-- verify `npm -v`
 
 ### yarn
-
-```bash
-nix-env -iA nixpkgs.yarn
-```
-
-or 
 
 ```bash
 npm install --global yarn
@@ -73,7 +69,16 @@ nix-env -iA nixpkgs.librewolf
 
 ### VS Codium
 
-#### Using Nix
+```bash
+wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg \
+    | gpg --dearmor \
+    | sudo dd of=/usr/share/keyrings/vscodium-archive-keyring.gpg
+echo 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main' \
+    | sudo tee /etc/apt/sources.list.d/vscodium.list
+sudo apt update && sudo apt install codium
+```
+
+or using `nix`
 
 ```bash
 nix-env -iA nixpkgs.vscodium
