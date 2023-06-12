@@ -7,11 +7,48 @@
 - choose the `proprietary and tested` option from driver list
 - RESTART
 
-### Update
+### Update packages list
 
 ```bash
 sudo apt update
 ```
+
+### Upgrade the installed packages
+
+```bash
+sudo apt upgrade
+```
+
+### General apt commands
+
+- Remove package
+
+```bash
+sudo apt remove package
+```
+
+- Remove any remaining configuration files for package
+
+```bash
+sudo apt purge package
+```
+
+- Clear package cache
+- If some package installtion poses some installation bugs/errors
+
+
+```bash
+sudo apt clean
+```
+
+### VLC
+
+```bash
+sudo apt install vlc
+```
+
+
+
 
 ### Themeing
 
