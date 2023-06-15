@@ -19,6 +19,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### Fzf
+
+```bash
+sudo apt install fzf
+```
+
 ### General apt commands
 
 - Remove package
