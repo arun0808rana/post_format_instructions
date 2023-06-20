@@ -19,6 +19,16 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### Clam AV
+
+```bash
+sudo apt update
+sudo apt install clamav clamtk clamav-daemon
+# sudo systemctl stop clamav-freshclam # else clam av locks the system files while updating
+# sudo freshclam # update
+# sudo systemctl start clamav-freshclam # starting the clam av service
+```
+
 ### Fzf
 
 ```bash
