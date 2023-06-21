@@ -63,7 +63,12 @@ sudo apt clean
 sudo apt install vlc
 ```
 
+### Tor
 
+1. Extract the tor zip
+2. Move the `start-tor-browser.desktop` file to `/usr/share/applications`.
+3. `sudo mv start-tor-browser.desktop /usr/share/applications/tor.desktop`.
+4. `tor.desktop` will be the new name. Now you can search it through apps and add it as favourates to ubuntu dash(sidebar).
 
 
 ### Themeing
