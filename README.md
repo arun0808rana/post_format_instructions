@@ -208,7 +208,9 @@ alt + l
 m:0x18 + c:31
 alt + i
 ```
+### QEMU
 
+https://christitus.com/vm-setup-in-linux/
 
 ### Volumes commands
 
