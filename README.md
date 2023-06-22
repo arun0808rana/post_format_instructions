@@ -35,6 +35,12 @@ sudo apt install clamav clamtk clamav-daemon
 # sudo systemctl start clamav-freshclam # starting the clam av service
 ```
 
+### TLDR
+
+```bash
+sudo apt install tldr
+```
+
 ### Starship
 
 ```bash
