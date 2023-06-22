@@ -40,7 +40,12 @@ sudo apt install clamav clamtk clamav-daemon
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
-- If starship asks you, then add this to the end of your .bashrc `eval "$(starship init bash)"`
+- If starship asks you, then add this to the end of your .bashrc
+  
+```bash
+eval "$(starship init bash)"
+```
+
 - For icons and fonts, download `Noto Nerd Font` from https://www.nerdfonts.com/font-downloads
 ```bash
 mkdir ~/.fonts
