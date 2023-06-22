@@ -40,7 +40,7 @@ sudo apt install clamav clamtk clamav-daemon
 ```bash
 curl -sS https://starship.rs/install.sh | sh
 ```
-- If starship asks you, then add this to the end of your .bashrc
+- If starship asks you, then add the following line to the end of your .bashrc
   
 ```bash
 eval "$(starship init bash)"
