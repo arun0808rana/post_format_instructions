@@ -59,12 +59,14 @@ mkdir ~/.fonts
 ```bash
 mkdir -p ~/.config && touch ~/.config/starship.toml
 ```
+- Add the following code to `starship.toml`
+  
 ```toml
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
 # Inserts a blank line between shell prompts
-add_newline = true
+# add_newline = true
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character] # The name of the module we are configuring is 'character'
