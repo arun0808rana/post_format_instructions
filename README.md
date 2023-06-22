@@ -45,6 +45,18 @@ sudo apt install clamav clamtk clamav-daemon
 sudo apt install tldr
 ```
 
+### Fuck
+
+```bash
+sudo apt install thefuck
+```
+- Paste this in .bashrc
+
+```bash
+eval $(thefuck --alias fuck)
+```
+
+
 ### Xclip for pwd copy alias
 
 ```bash
