@@ -19,6 +19,12 @@ sudo apt update
 sudo apt upgrade
 ```
 
+### Curl
+
+```bash
+sudo apt install curl
+```
+
 ### Clam AV
 
 ```bash
@@ -28,6 +34,19 @@ sudo apt install clamav clamtk clamav-daemon
 # sudo freshclam # update
 # sudo systemctl start clamav-freshclam # starting the clam av service
 ```
+
+### Starship
+
+- ```bash
+curl -sS https://starship.rs/install.sh | sh
+```
+- If starship asks you, then add this to the end of your .bashrc `eval "$(starship init bash)"`
+- For icons and fonts, download `Noto Nerd Font` from https://www.nerdfonts.com/font-downloads
+-  ```bash
+mkdir ~/.fonts
+```
+- Extract the noto font to ~/.fonts dir
+
 
 ### Fzf
 
@@ -92,11 +111,7 @@ mkdir ~/.icons
 - Extract the zip inside .icons
 - use gnome-tweaks > appearance to change icons & themes
 
-### Curl
 
-```bash
-sudo apt install curl
-```
 
 ### Brave Browser
 
