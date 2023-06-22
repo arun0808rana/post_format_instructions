@@ -236,7 +236,7 @@ alt + i
 ```
 ### QEMU
 - Note: Enable virtulalization in your BIOS settings
-https://christitus.com/vm-setup-in-linux/
+- https://christitus.com/vm-setup-in-linux/
 
 ### Volumes commands
 
