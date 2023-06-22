@@ -45,6 +45,12 @@ sudo apt install clamav clamtk clamav-daemon
 sudo apt install tldr
 ```
 
+### Xclip for pwd copy alias
+
+```bash
+sudo apt install xclip
+```
+
 ### Starship
 
 ```bash
