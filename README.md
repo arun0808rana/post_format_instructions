@@ -39,6 +39,28 @@ sudo apt install clamav clamtk clamav-daemon
 
 - Paste .bash_aliases file from this repo into the ~
 
+
+### Context Menus
+
+```bash
+sudo apt-get install filemanager-actions nautilus-actions
+```
+
+- Open fma-config-tool
+
+```bash
+fma-config-tool
+```
+
+* For codium
+* Create a new action. Find the damn plust icon or something that says to define a new action. Rename it like `Open with codium` by double clicking the name.
+* Tick `display icon in location context menu`
+* In the command tab, use `/usr/bin/codium` as path & `%F` as `parameters`
+* Save it
+* Restart nautilus by `nautilus -q` command.
+
+For more info refer: https://askubuntu.com/questions/1138673/is-filemanager-actions-working-with-19-04/1138682#1138682
+
 ### TLDR
 
 ```bash
