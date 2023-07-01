@@ -35,6 +35,18 @@ sudo apt install clamav clamtk clamav-daemon
 # sudo systemctl start clamav-freshclam # starting the clam av service
 ```
 
+### lsd
+
+```bash
+sudo apt install lsd
+```
+
+### batcat
+
+```bash
+sudo apt install bat
+```
+
 ### Aliases
 
 - Paste .bash_aliases file from this repo into the ~
