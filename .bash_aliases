@@ -2,6 +2,8 @@ alias ll='echo [COMMAND]: lsd -alF && lsd -alF'
 alias code='echo [COMMAND]: codium && codium'
 alias aria2c='echo [COMMAND]: "aria2c -c -s 16 -x 16 -k 1M -j 16" && aria2c -c -s 16 -x 16 -k 1M -j 16'
 alias weather='echo [COMMAND]: curl wttr.in/?format=3 && curl wttr.in/?format=3'
+alias bat='echo [COMMAND]: batcat && batcat'
+
 # makes parent directories mentioned in the path argument
 alias mkdir='echo [COMMAND]: mkdir -p && mkdir -p'
 
@@ -37,4 +39,14 @@ sudo_prefix() {
     # In Bash, the READLINE_POINT variable represents the current position of the cursor within the command line. By modifying this variable, we can control the cursor's position.
     # READLINE_POINT + 5 adds 5 to the current value of READLINE_POINT. +5 means shift the cursor 5 characters right. Bcoz sudo consists of 4 chars and and the 5th character is space
     READLINE_POINT=$((READLINE_POINT + 5))
+}
+
+# allows using the syntax - nix install packageName, to install a package
+function nix() {
+    if [[ $1 == "install" ]]; then
+        echo '[COMMAND]: nix-env -iA nixpkgs.'$2
+        nix-env -iA nixpkgs.$2
+    else
+        command nix "$1"
+    fi
 }
