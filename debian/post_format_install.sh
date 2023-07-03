@@ -12,6 +12,7 @@ sudo apt install -y vlc
 sudo apt install -y gnome-tweaks
 sudo apt install -y lsd
 sudo apt install -y bat
+sudo apt install -y gnome-screenshot
 mkdir ~/.themes
 mkdir ~/.icons
 sudo curl -fsSLo /usr/share/keyrings/brave-browser-archive-keyring.gpg https://brave-browser-apt-release.s3.brave.com/brave-browser-archive-keyring.gpg
