@@ -26,9 +26,13 @@ nano /etc/sudoers
 ...rest of the code
 
 \# User privilege specification
+
 root ALL=(ALL:ALL) ALL
+
 Paste -------------here---------
+
 your_username ALL=(ALL:ALL) ALL
+
 ...rest of the code
 
 ctrl+x to save and exit
