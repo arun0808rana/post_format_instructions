@@ -32,8 +32,6 @@ sudo npm install --global yarn
 
 echo -e "\n# this needs to be at the end\neval \$(thefuck --alias fuck)" >> ~/.bashrc
 
-curl -sS https://starship.rs/install.sh | sh
-
 mkdir -p ~/.config && touch ~/.config/starship.toml
 
 cat <<EOF > ~/.config/starship.toml
@@ -53,6 +51,8 @@ style = '#3e73d0'
 EOF
 
 echo -e "\n\n# this needs to be at the end\neval \"\$(starship init bash)\"" >> ~/.bashrc
+
+curl -sS https://starship.rs/install.sh | sh
 
 
 
