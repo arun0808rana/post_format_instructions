@@ -31,6 +31,29 @@ apt-get install -y nodejs
 
 echo -e "\n# this needs to be at the end\neval \$(thefuck --alias fuck)" >> ~/.bashrc
 
+curl -sS https://starship.rs/install.sh | sh
+
+mkdir -p ~/.config && touch ~/.config/starship.toml
+
+cat <<EOF > starship.toml
+# Get editor completions based on the config schema
+"\$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+# add_newline = true
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[✗](bold red)' # The 'error_symbol' segment is being set to '✗' with the color 'bold red'
+
+[directory]
+style = '#3e73d0'
+EOF
+
+echo -e "\n\n# this needs to be at the end\neval \"\$(starship init bash)\"" >> ~/.bashrc
+
+
 
 
 
