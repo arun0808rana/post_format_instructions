@@ -35,7 +35,7 @@ curl -sS https://starship.rs/install.sh | sh
 
 mkdir -p ~/.config && touch ~/.config/starship.toml
 
-cat <<EOF > starship.toml
+cat <<EOF > ~/.config/starship.toml
 # Get editor completions based on the config schema
 "\$schema" = 'https://starship.rs/config-schema.json'
 
