@@ -13,16 +13,14 @@ bind -x '"\e\s": sudo_prefix'
 # Bind Ctrl+L to clear the command line
 bind -x '"\C-l": "clear;"'
 
-# ls before cding into a dir
+# cd and then ll into the directory
+# The && operator ensures that the ll command is executed only if the cd command succeeds
 cd() {
     # if $1(first argument) is empty then emit cd command without argument(s)
     if [ -z "$1" ]; then
-        # builtin command prevent infinte recursive loop
-        builtin cd
-        ll
+        builtin cd && ll
     else
-        builtin cd "$1"
-        ll
+        builtin cd "$1" && ll
     fi
 }
 
