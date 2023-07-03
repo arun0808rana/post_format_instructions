@@ -28,6 +28,7 @@ sudo apt update -y && sudo apt install -y codium
 
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &&\
 apt-get install -y nodejs
+sudo npm install --global yarn
 
 echo -e "\n# this needs to be at the end\neval \$(thefuck --alias fuck)" >> ~/.bashrc
 
