@@ -62,6 +62,8 @@ error_symbol = '[âœ—](bold red)' # The 'error_symbol' segment is being set to 'â
 
 [directory]
 style = '#3e73d0'
+
+command_timeout = 2000
 EOF
 
 echo '---------starship integration in .bashrc----------------'
@@ -70,6 +72,13 @@ echo -e "\n\n# this needs to be at the end\neval \"\$(starship init bash)\"" >> 
 
 echo '-------------Installing starship-----------------'
 
+# Make sure this runs after creating the starship.toml file
 curl -sS https://starship.rs/install.sh | sh
+
+echo '----------------Installing nix-----------------'
+sh <(curl -L https://nixos.org/nix/install) --daemon
+
+echo '-----------Installing monolith-----------------'
+nix-env -iA nixpkgs.monolith
 
 source "/home/$USER/.bashrc"
