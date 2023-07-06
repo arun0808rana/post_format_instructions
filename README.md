@@ -24,6 +24,19 @@ sudo apt upgrade
 ```bash
 sudo apt install curl
 ```
+### Neovim
+
+- goto https://github.com/neovim/neovim/releases
+- make sure its not nightly or pre-release. maybe latest
+- choose the tar.gz file
+- untar it and move it to /usr/bin/nvim if nvchad repo demands it. like in debian due to old versioning
+
+
+```bash
+tar xzvf nvim-linux64.tar.gz
+sudo mv ./nvim-linux64/bin/nvim /usr/bin/nvim
+nvim -v
+```
 
 ### Clam AV
 
