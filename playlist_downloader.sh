@@ -14,7 +14,7 @@ if ! command -v aria2c &>/dev/null; then
 fi
 
 # Check if ffmpeg is installed
-if [ ! -f "ffmpeg" ]; then
+if ! command -v ffmpeg &>/dev/null; then
   echo "ffmpeg is not installed. Installing ffmpeg."
   sudo apt install -y ffmpeg
 fi
