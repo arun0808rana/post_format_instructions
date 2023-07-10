@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# copy brave bookmarks to dev_profile/configs
+cp /home/$USER/.config/BraveSoftware/Brave-Browser/Default/Bookmarks /home/$USER/dev_profile/configs/brave/Bookmarks
+
 # copy .bashrc into dev_profile/configs
 cp /home/$USER/.bashrc /home/$USER/dev_profile/configs/.bashrc
 
