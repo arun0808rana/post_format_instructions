@@ -13,6 +13,7 @@ sudo apt install -y gnome-tweaks
 sudo apt install -y lsd
 sudo apt install -y bat
 sudo apt install -y git
+sudo apt install -y deluge
 
 echo '--------------Making .themes and .icons directories----------------'
 mkdir "/home/$USER/.themes"
