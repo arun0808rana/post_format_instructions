@@ -14,6 +14,8 @@ sudo apt install -y lsd
 sudo apt install -y bat
 sudo apt install -y git
 sudo apt install -y deluge
+sudo apt install -y libnotify-bin
+
 
 echo '--------------Making .themes and .icons directories----------------'
 mkdir "/home/$USER/.themes"
