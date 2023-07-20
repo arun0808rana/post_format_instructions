@@ -15,6 +15,12 @@ sudo apt install -y bat
 sudo apt install -y git
 sudo apt install -y deluge
 sudo apt install -y libnotify-bin
+sudo apt install -y autojump
+
+echo '--------------Adding weights to autojump db-----------------------'
+j -a ~/dev_profile/pro -i 10
+j -a ~/dev_profile/Downloads -i 10
+j -a ~/dev_profile -i 10
 
 
 echo '--------------Making .themes and .icons directories----------------'
