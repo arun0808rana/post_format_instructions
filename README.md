@@ -54,6 +54,12 @@ sudo apt install clamav clamtk clamav-daemon
 sudo apt install lsd
 ```
 
+add this to .bashrc for removing green highlight from dirs during lsd output
+
+```bash
+export LS_COLORS+=':ow=01;33'
+```
+
 ### batcat
 
 ```bash
