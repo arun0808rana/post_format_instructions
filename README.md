@@ -24,6 +24,19 @@ sudo apt upgrade
 ```bash
 sudo apt install curl
 ```
+
+### Autojump
+
+```bash
+sudo apt install autojump
+```
+
+Add the following in your .bashrc and source .bashrc after that
+
+```bash
+[[ -s /usr/share/autojump/autojump.sh ]] && . /usr/share/autojump/autojump.sh
+```
+
 ### Neovim
 
 - goto https://github.com/neovim/neovim/releases
