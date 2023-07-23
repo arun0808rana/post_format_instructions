@@ -17,6 +17,7 @@ sudo apt install -y deluge
 sudo apt install -y libnotify-bin
 sudo apt install -y autojump
 sudo apt install -y nnn
+sudo apt install -y which
 
 echo '--------------Adding weights to autojump db-----------------------'
 j -a ~/dev_profile/pro -i 10
