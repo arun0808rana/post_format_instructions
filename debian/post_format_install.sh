@@ -10,7 +10,7 @@ sudo apt install -y xclip
 sudo apt install -y fzf
 sudo apt install -y vlc
 sudo apt install -y gnome-tweaks
-sudo apt install -y lsd
+sudo apt install -y exa
 sudo apt install -y bat
 sudo apt install -y git
 sudo apt install -y deluge
