@@ -18,6 +18,7 @@ sudo apt install -y libnotify-bin
 sudo apt install -y autojump
 sudo apt install -y nnn
 sudo apt install -y which
+sudo apt install -y trash-cli
 
 echo '--------------Adding weights to autojump db-----------------------'
 j -a ~/dev_profile/pro -i 10
