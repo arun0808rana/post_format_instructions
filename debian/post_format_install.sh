@@ -104,5 +104,6 @@ sudo apt install -y insomnia
 
 sudo curl -JL -o /usr/bin/nvim https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
 chmod +x /usr/bin/nvim
+nvim
 
 source "/home/$USER/.bashrc"
