@@ -102,4 +102,7 @@ echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ 
 sudo apt update
 sudo apt install -y insomnia
 
+sudo curl -JL -o /usr/bin/nvim https://github.com/neovim/neovim/releases/download/stable/nvim.appimage
+chmod +x /usr/bin/nvim
+
 source "/home/$USER/.bashrc"
