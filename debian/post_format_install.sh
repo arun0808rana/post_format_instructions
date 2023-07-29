@@ -26,7 +26,7 @@ sudo apt install -y alsa-utils
 sudo apt install -y sxhkd
 sudo apt install -y kwrite
 
-echo '----------------media hotkeys---------------'
+echo '----------------initializing sxhkd hotkeys---------------'
 mkdir -p ~/.config/sxhkd
 touch ~/.config/sxhkd/sxhkdrc
 
@@ -68,37 +68,25 @@ echo '------------Making .config dir in root and creating starship.toml inside i
 mkdir -p "/home/$USER/.config"
 touch "/home/$USER/.config/starship.toml"
 
-echo '----------------Cating starship configuration in starship.toml file----------------'
+echo '-----------------------------alacritty theming-------------------------------'
+mkdir -p ~/.config/alacritty/themes
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 
-cat <<EOF > "/home/$USER/.config/starship.toml"
-# Get editor completions based on the config schema
-"\$schema" = 'https://starship.rs/config-schema.json'
-
-# Inserts a blank line between shell prompts
-# add_newline = true
-
-# Replace the '❯' symbol in the prompt with '➜'
-[character] # The name of the module we are configuring is 'character'
-success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
-error_symbol = '[✗](bold red)' # The 'error_symbol' segment is being set to '✗' with the color 'bold red'
-
-[directory]
-style = '#3e73d0'
-
-command_timeout = 2000
-EOF
 
 echo '---------starship integration in .bashrc----------------'
-
 echo -e "\n\n# this needs to be at the end\neval \"\$(starship init bash)\"" >> "/home/$USER/.bashrc"
 
 echo '-------------Installing starship-----------------'
-
-# Make sure this runs after creating the starship.toml file
 curl -sS https://starship.rs/install.sh | sh
+
+echo '----------------starship preseting a presset to starship.toml file----------------'
+touch ~/.config/starship.toml
+starship preset nerd-font-symbols -o ~/.config/starship.toml
 
 echo '----------------Installing nix-----------------'
 sh <(curl -L https://nixos.org/nix/install) --daemon
+
+source "/home/$USER/.bashrc"
 
 echo '-----------Installing monolith-----------------'
 nix-env -iA nixpkgs.monolith
