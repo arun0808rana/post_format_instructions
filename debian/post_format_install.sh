@@ -21,6 +21,7 @@ sudo apt install -y which
 sudo apt install -y trash-cli
 sudo apt install -y xinput
 sudo apt install -y htop
+sudo apt install -y foliate
 
 echo '--------------Adding weights to autojump db-----------------------'
 j -a ~/dev_profile/pro -i 10
