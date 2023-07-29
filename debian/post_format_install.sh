@@ -22,6 +22,12 @@ sudo apt install -y trash-cli
 sudo apt install -y xinput
 sudo apt install -y htop
 sudo apt install -y foliate
+sudo apt install -y alsa-utils
+sudo apt install -y sxhkd
+
+echo '----------------media hotkeys---------------'
+mkdir -p ~/.config/sxhkd
+touch ~/.config/sxhkd/sxhkdrc
 
 echo '--------------Adding weights to autojump db-----------------------'
 j -a ~/dev_profile/pro -i 10
