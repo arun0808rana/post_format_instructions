@@ -24,6 +24,7 @@ sudo apt install -y htop
 sudo apt install -y foliate
 sudo apt install -y alsa-utils
 sudo apt install -y sxhkd
+sudo apt install -y kwrite
 
 echo '----------------media hotkeys---------------'
 mkdir -p ~/.config/sxhkd
