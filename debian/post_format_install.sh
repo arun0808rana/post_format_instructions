@@ -28,7 +28,13 @@ sudo apt install -y kwrite
 sudo apt install -y alacritty
 sudo apt install -y libsixel-bin
 sudo apt install -y neofetch
+sudo apt install -v flatpak
 
+echo '-------------------Adding flatpak repo source---------------------'
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+echo '-----------------Installing WEZTERM-----------------------'
+flatpak install flathub org.wezfurlong.wezterm
 
 echo '-------------------GTK Theming---------------------------'
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
