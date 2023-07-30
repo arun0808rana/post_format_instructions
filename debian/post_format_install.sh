@@ -26,6 +26,8 @@ sudo apt install -y alsa-utils
 sudo apt install -y sxhkd
 sudo apt install -y kwrite
 sudo apt install -y alacritty
+sudo apt install -y libsixel-bin
+sudo apt install -y neofetch
 
 
 echo '-------------------GTK Theming---------------------------'
