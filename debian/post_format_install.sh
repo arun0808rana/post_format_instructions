@@ -107,8 +107,15 @@ sh <(curl -L https://nixos.org/nix/install) --daemon
 
 source "/home/$USER/.bashrc"
 
-echo '-----------Installing monolith-----------------'
-nix-env -iA nixpkgs.monolith
+echo '--------------Installing NIX Packages-----------------'
+# The command you want to execute in the new Bash session
+nix_packages="nix-env -iA nixpkgs.monolith"
+
+# Check if gnome-terminal is installed (you can replace this with your terminal emulator)
+if command -v gnome-terminal &>/dev/null; then
+    # Open a new gnome-terminal window with the specified command
+    gnome-terminal -- bash -c "$nix_packages; exec bash"
+fi
 
 echo '-----------Installing Insomnia-----------------'
 echo "deb [trusted=yes arch=amd64] https://download.konghq.com/insomnia-ubuntu/ default all" \
