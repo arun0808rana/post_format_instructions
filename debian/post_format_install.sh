@@ -25,6 +25,17 @@ sudo apt install -y foliate
 sudo apt install -y alsa-utils
 sudo apt install -y sxhkd
 sudo apt install -y kwrite
+sudo apt install -y alacritty
+
+
+echo '-------------------GTK Theming---------------------------'
+gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+
+echo '--------------Removing default workspace bindings----------------'
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['']"
+
 
 echo '----------------initializing sxhkd hotkeys---------------'
 mkdir -p ~/.config/sxhkd
