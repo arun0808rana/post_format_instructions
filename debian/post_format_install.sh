@@ -39,6 +39,8 @@ flatpak install flathub org.wezfurlong.wezterm
 echo '-------------------GTK Theming---------------------------'
 gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+# super+d to show desktop
+gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 
 echo '--------------Removing default workspace bindings----------------'
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['']"
