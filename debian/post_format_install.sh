@@ -77,7 +77,7 @@ sudo apt update -y && sudo apt install -y codium
 
 echo '-------------Installing Nodejs-----------------'
 curl -fsSL https://deb.nodesource.com/setup_lts.x | bash - &&\
-apt-get install -y nodejs
+sudo apt-get install -y nodejs
 
 echo '-------------Installing Yarn-----------------'
 sudo npm install --global yarn
