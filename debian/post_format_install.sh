@@ -111,7 +111,7 @@ source "/home/$USER/.bashrc"
 
 echo '--------------Installing NIX Packages-----------------'
 # The command you want to execute in the new Bash session
-nix_packages="nix-env -iA nixpkgs.monolith"
+nix_packages="nix-env -iA nixpkgs.monolith nixpkgs.dotenv-linter"
 
 # Check if gnome-terminal is installed (you can replace this with your terminal emulator)
 if command -v gnome-terminal &>/dev/null; then
